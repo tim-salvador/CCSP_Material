@@ -1,177 +1,203 @@
-# 📖 CCSP Module 1 Study Sheet: Cybersecurity Basics  
+# **CCSP Module 1: Cybersecurity Basics – Study Guide**
 
 ---
 
-## 1. CCSP Overview
-- ISC² + Cloud Security Alliance developed CCSP.  
-- **6 Domains**:  
-  1. Cloud architecture & design  
-  2. Cloud data security  
-  3. Cloud platform & infrastructure security  
-  4. Cloud application security  
-  5. Cloud operations & management  
-  6. Cloud legal, risk & compliance  
+## **Outline of Lecture Notes**
 
-**Exam Tip**: Even if the cloud provider handles infrastructure, **GRC is always customer’s responsibility**.  
-
----
-
-## 2. CIA Triad
-- **Confidentiality**: Only authorized access (encryption, least privilege).  
-- **Integrity**: Prevent unauthorized modification (hashes, digital signatures).  
-- **Availability**: Ensure access when needed (backups, RAID, clustering).  
-
-**Opposites = DAD**: Disclosure, Alteration, Destruction.  
-
----
-
-## 3. Governance Principles
-- **Policy**: Management intent (strategic).  
-- **Standards**: Rules & consistency.  
-- **Procedures**: Step-by-step actions.  
-- **Guidelines/Baselines**: Supporting docs.  
-
-**Policy Types**:  
-- Regulatory (HIPAA, SOX, PCI DSS).  
-- Advisory (acceptable use, PII/PHI handling).  
-- Informative (awareness, company goals).  
+1. **CCSP Overview**
+2. **CIA Triad**
+   - Confidentiality
+   - Integrity
+   - Availability
+3. **Governance Principles**
+   - Policies, Standards, Procedures, Guidelines, Baselines
+   - Types of Policies: Regulatory, Advisory, Informative
+   - Internal vs External Governance
+   - GRC (Governance, Risk, Compliance)
+4. **Control Frameworks**
+   - Security Framework Definition
+   - Key Frameworks: NIST, ISO, CIS, ITIL, COBIT, COSO, CMMI
+   - Countermeasures & Risk Management
+5. **NIST Cybersecurity Framework (CSF)**
+   - Framework Core: Functions, Categories, Subcategories, Informative References
+   - Implementation Tiers: Partial → Adaptive
+   - Framework Profiles: Current & Target State
+6. **Regulatory Compliance**
+   - International Law & US State Law
+   - Intellectual Property (IP), Patents, Trademarks, Trade Secrets
+   - Privacy Laws (GDPR, OECD)
+   - Incident, Breach, Data Disclosure
+   - Due Care vs Due Diligence
 
 ---
 
-## 4. Control Frameworks
-Frameworks = structured methods to apply controls. Must be **consistent, measurable, standardized, comprehensive, modular**.  
+## **Section Summaries, Key Terms, and Points**
 
-**Examples**:  
-- NIST 800-53 → 385+ controls, 19 families.  
-- ISO 27001/27002 → International, 114 controls in 14 groups.  
-- CIS Controls → 20 prioritized controls.  
-- COBIT → IT governance.  
-- PCI DSS → Payment card.  
-- COSO → Financial reporting/internal control.  
-- CMMI → Process improvement (Levels 1–5).  
-
-**Analogy**: Wolf = threat, Hole in fence = vulnerability, Sheep = asset.  
+### **1. CCSP Overview**
+- **Summary**: The CCSP certification, developed by ISC² and CSA, addresses cloud security fundamentals. The learning path covers all six CCSP domains and includes theory, demos, and practice exams.
+- **Key Points**:
+  - CCSP is for professionals with some cybersecurity background.
+  - Focuses on cloud security skills.
+  - Six domains: Cloud Architecture, Data Security, Platform & Infrastructure Security, Application Security, Security Operations, Legal/Risk/Compliance.
+- **Definitions**:
+  - **CCSP** – Certified Cloud Security Professional.
+  - **CSA** – Cloud Security Alliance.
 
 ---
 
-## 5. NIST Cybersecurity Framework (CSF)
-- Origin: **Obama EO 13636 (2013)** → voluntary.  
-- **Trump EO 13800 (2017)** → mandatory for federal agencies.  
-
-**Components**:  
-1. **Core**: Functions (IPDRR → Identify, Protect, Detect, Respond, Recover) → Categories → Subcategories → References.  
-2. **Tiers**: 1 = Partial, 2 = Risk-informed, 3 = Repeatable, 4 = Adaptive.  
-3. **Profiles**: Current vs. Target → roadmap, gap analysis.  
-
-**Mnemonic**: “I Play Defense, Ready & Resilient.”  
-
----
-
-## 6. Regulatory Compliance
-- **International Law**: Conventions, customs, principles.  
-- **U.S. Law Types**: Criminal (gov prosecution), Civil/Tort (private lawsuits).  
-- **Intellectual Property**: Copyright, Patents, Trademarks, Trade Secrets.  
-- **Privacy Laws**: GDPR, HIPAA, SOX, GLBA, OECD, FISMA, PCI DSS.  
-
-**Key Concepts**:  
-- **Due Care** = Doing the right thing (e.g., deploy antivirus).  
-- **Due Diligence** = Checking it’s maintained (e.g., update patches).  
-- **Negligence** = Failure of either → liability.  
-- **Senior Management = Always responsible.**  
+### **2. CIA Triad**
+- **Summary**: Core information security principles: Confidentiality, Integrity, Availability.
+- **Definitions**:
+  - **Confidentiality**: Only authorized entities can access information. Uses **least privilege** and **need-to-know**.
+  - **Integrity**: Data cannot be altered without authorization; ensures authenticity and non-repudiation.
+  - **Availability**: Systems are accessible and usable by authorized users when needed.
+- **Key Points**:
+  - Opposites of CIA are **DAD**: Disclosure, Alteration, Destruction.
+  - Methods to ensure CIA:
+    - Confidentiality → Encryption
+    - Integrity → Hashes, digital signatures
+    - Availability → Backups, RAID, redundancy
+- **Key Lists**:
+  - CIA → Confidentiality, Integrity, Availability
+  - DAD → Disclosure, Alteration, Destruction
 
 ---
 
-## 7. Quiz Review (Sample Exam Points)
-- **SOC Trust Principles**: Security, Availability, Processing Integrity, Confidentiality, Privacy.  
-- **CIA Triad Pillars**: Confidentiality, Integrity, Availability.  
-- **NIST CSF Functions**: Identify, Protect, Detect, Respond, Recover.  
-- **Vendor lock-in**: Customer can’t migrate/leave CSP.  
-- **Private Cloud**: Best for high security/privacy orgs.  
-- **External Governance**: Vendors, contractors, suppliers, customers.  
+### **3. Governance Principles**
+- **Summary**: Governance ensures security aligns with business goals and legal/regulatory requirements.
+- **Definitions**:
+  - **Policy**: Management’s expectations for protecting CIA.
+  - **Standard**: Acceptable level of adherence to policy.
+  - **Procedure**: Step-by-step actions to implement policy.
+  - **Guideline**: Recommendations to support procedures.
+  - **Baseline**: Minimum security requirements.
+- **Key Points**:
+  - Policies must be technology-independent.
+  - Internal governance: decision-making within the organization.
+  - External governance: applied to vendors, contractors, suppliers.
+  - GRC = Governance, Risk, Compliance; always customer responsibility in cloud.
+- **Policy Types**:
+  - Regulatory → Compliance with laws (HIPAA, SOX, PCI DSS)
+  - Advisory → Guidance on expected behavior
+  - Informative → Inform employees; not enforceable
 
 ---
 
-## Flashcards (Q → A)
-
-**Q:** What are the 3 pillars of the CIA Triad?  
-**A:** Confidentiality, Integrity, Availability.  
-
-**Q:** Opposite of CIA (DAD)?  
-**A:** Disclosure, Alteration, Destruction.  
-
-**Q:** Which framework is international with 114 controls?  
-**A:** ISO 27001/27002.  
-
-**Q:** What are the 5 NIST CSF functions?  
-**A:** Identify, Protect, Detect, Respond, Recover.  
-
-**Q:** Due care vs. due diligence?  
-**A:** Due care = doing the right thing; Due diligence = ensuring/maintaining it.  
-
-**Q:** Who is responsible for negligence in security failures?  
-**A:** Senior management.  
-
-**Q:** What are the SOC Trust Principles?  
-**A:** Security, Availability, Processing Integrity, Confidentiality, Privacy.  
-
-**Q:** Example of ensuring availability?  
-**A:** Backups, clustering, RAID.  
+### **4. Control Frameworks**
+- **Summary**: Frameworks provide structured guidance for implementing and managing security controls.
+- **Definitions**:
+  - **Control**: Tool, process, or mechanism to mitigate risk.
+  - **Countermeasure**: Action to reduce threat exploitation of vulnerabilities.
+  - **Risk**: Likelihood a threat exploits a vulnerability.
+  - **Vulnerability**: Weakness exploitable by a threat.
+- **Key Frameworks**:
+  - **NIST 800-53/171/37**
+  - **ISO 27000 series**
+  - **CIS Controls**
+  - **ITIL**, **COBIT**, **COSO**, **CMMI**
+- **Key Points**:
+  - Frameworks are consistent, measurable, standardized, comprehensive, modular.
+  - CMMI Levels 1–5 define process maturity.
+  - Defense-in-depth methodology maximizes security benefit.
 
 ---
 
-## Mnemonics
-- **CIA → Confidentiality, Integrity, Availability**  
-- **DAD → Disclosure, Alteration, Destruction**  
-- **IPDRR → Identify, Protect, Detect, Respond, Recover**  
-- **SAPP → SOC Trust Principles (Security, Availability, Processing Integrity, Privacy)**  
-- **“Prudent Man Principle” → Due Care**  
-- **Wolf & Sheep Analogy → Threat, Vulnerability, Asset**  
+### **5. NIST Cybersecurity Framework (CSF)**
+- **Summary**: CSF guides organizations to assess and improve cybersecurity capabilities.
+- **Definitions**:
+  - **Framework Core**: Functions (IPDRR), Categories, Subcategories, Informative References.
+  - **Functions (IPDRR)**: Identify, Protect, Detect, Respond, Recover.
+  - **Implementation Tiers**: Partial → Adaptive (Tier 1 → Tier 4)
+  - **Profiles**: Align CSF functions with organizational goals; current vs target state.
+- **Key Points**:
+  - CSF is voluntary for private sector but mandatory for US federal agencies (EO 13800).
+  - Categories → specific activities; Subcategories → technical/management tasks.
+  - Informative References → ISO, COBIT, NIST 853/171.
 
 ---
 
-## Quick-Check Exam Drill (Practice Q&A)
+### **6. Regulatory Compliance**
+- **Summary**: Ensures cloud infrastructure adheres to legal, regulatory, and privacy requirements.
+- **Definitions**:
+  - **Incident**: Event potentially harming CIA.
+  - **Breach**: Disclosure or exposure of data.
+  - **Data Disclosure**: Unauthorized acquisition of personal information.
+  - **Due Care**: Duty to do the right thing (policies/procedures).
+  - **Due Diligence**: Ensuring due care is followed.
+- **Key Points**:
+  - Laws: International, US state, criminal, civil/tort.
+  - IP: Copyright, patents, trademarks, trade secrets.
+  - Privacy: GDPR, OECD, EU-US Privacy Shield.
+  - Negligence may lead to fines (e.g., GDPR violations).
 
-**Q1.** Which principle of the CIA triad is violated if an attacker modifies financial records?  
-**A:** Integrity.  
+---
 
-**Q2.** What is the opposite of Availability in the DAD model?  
-**A:** Destruction.  
+## **Acronyms**
 
-**Q3.** In cloud security, who holds ultimate responsibility for GRC?  
-**A:** The customer (enterprise).  
+| Acronym | Meaning |
+|---------|---------|
+| CCSP    | Certified Cloud Security Professional |
+| CSA     | Cloud Security Alliance |
+| CIA     | Confidentiality, Integrity, Availability |
+| DAD     | Disclosure, Alteration, Destruction |
+| SOC     | Service Organization Control |
+| GRC     | Governance, Risk, Compliance |
+| HIPAA   | Health Insurance Portability and Accountability Act |
+| SOX     | Sarbanes-Oxley Act |
+| PCI DSS | Payment Card Industry Data Security Standard |
+| ISO     | International Organization for Standardization |
+| ITIL    | Information Technology Infrastructure Library |
+| COBIT   | Control Objectives for Information and Related Technology |
+| CMMI    | Capability Maturity Model Integration |
+| CSF     | Cybersecurity Framework |
+| GDPR    | General Data Protection Regulation |
+| OECD    | Organization for Economic Cooperation and Development |
 
-**Q4.** Which framework is mandated for federal agencies under Executive Order 13800?  
-**A:** NIST Cybersecurity Framework (CSF).  
+---
 
-**Q5.** What does ISO 27001 primarily focus on?  
-**A:** Information Security Management Systems (ISMS).  
+## **Flashcards**
 
-**Q6.** What are the five NIST CSF functions?  
-**A:** Identify, Protect, Detect, Respond, Recover.  
+**Q:** What are the three elements of the CIA triad?  
+**A:** Confidentiality, Integrity, Availability ✅
 
-**Q7.** Which privacy law applies globally to EU citizens’ data, even outside the EU?  
-**A:** GDPR.  
+**Q:** What is the opposite of confidentiality?  
+**A:** Disclosure ✅
 
-**Q8.** Define Due Care vs. Due Diligence with an example.  
-**A:** Due Care = Deploy antivirus; Due Diligence = Keep it updated.  
+**Q:** What is due diligence?  
+**A:** Actions taken to ensure due care is followed ✅
 
-**Q9.** Which type of policy is used to comply with HIPAA or PCI DSS?  
-**A:** Regulatory Policy.  
+**Q:** Name the five NIST CSF functions.  
+**A:** Identify, Protect, Detect, Respond, Recover ✅
 
-**Q10.** Which CMMI level represents “managed” processes with metrics?  
-**A:** Level 4.  
+**Q:** What is the purpose of an ISO 27001 certification?  
+**A:** Establish an information security management system for consistent security controls ✅
 
-**Q11.** What does Vendor Lock-in describe?  
-**A:** Difficulty moving to another cloud provider due to proprietary dependencies.  
+**Q:** What is external governance?  
+**A:** Governance applied to vendors, contractors, and suppliers ✅
 
-**Q12.** What is the SOC Trust Principle missing if the answer option includes “Nonrepudiation”?  
-**A:** Privacy (correct set = Security, Availability, Processing Integrity, Confidentiality, Privacy).  
+---
 
-**Q13.** What is the main safeguard for ensuring Integrity of data?  
-**A:** Hashing, checksums, digital signatures.  
+## **Cybersecurity Basics Quiz Answers**
 
-**Q14.** What are the two types of Governance (internal vs. external) examples?  
-**A:** Internal = policies, roles, accountability; External = contracts, SLAs, MOUs.  
+1. **Security, Confidentiality, Processing Integrity, Availability and Privacy** ✅  
+2. **Availability** ✅  
+3. **Identify, Protect, Detect, Respond, Recover** ✅  
+4. **A customer may be unable to leave, migrate or transfer to an alternate CSP.** ✅  
+5. **Availability, Confidentiality, Integrity** ✅  
+6. **Private cloud** ✅  
+7. **Data exchange partners, contractors, hosting services, on-site consultants** ✅  
+8. **Confidentiality, Integrity, Availability** ✅  
+9. **Confidentiality is the property that information is not disclosed to system entities (processes, users, devices) unless they have been authorized to access the information.** ✅  
+10. **Availability is the timely and reliable access to and use of information by authorized users.** ✅  
 
-**Q15.** Senior management is sued after a breach because they ignored risk reports. Which concept applies?  
-**A:** Negligence (failure of due care/diligence).  
+---
+
+## **Building Blocks & Exam Traps**
+
+- **CIA vs DAD:** Always remember the opposites; questions often test them.  
+- **Policy vs Standard vs Procedure:** Policies are strategic; standards and procedures are tactical.  
+- **CSF Tiers:** Know the characteristics of each tier (Partial → Adaptive).  
+- **Due Care vs Due Diligence:** Don’t confuse; one is responsibility, the other is assurance.  
+- **Regulatory Requirements:** Memorize examples like GDPR, HIPAA, SOX, PCI DSS.  
+- **Framework Mapping:** NIST CSF can reference ISO 27001, COBIT, NIST 853/171—understand these relationships.  
+- **SOC Trust Principles:** Know Security, Availability, Processing Integrity, Confidentiality, Privacy (nonrepudiation is tricky).  
